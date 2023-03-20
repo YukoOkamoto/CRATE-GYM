@@ -1,4 +1,69 @@
 @charset "utf-8";
+/*共通*/
+html {
+    font-size: 100%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family:  Noto Sans Armenian,Hiragino Kaku Gothic Pro,sans-serif;
+    letter-spacing: 0.05em;
+    width: 100%;
+    height: 100%;
+    color: #404040;
+    background-color: #fff;
+}
+
+li {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: bottom;
+}
+
+/*header*/
+
+/*各セクションタイトル*/
+.title {
+    text-align: center;
+}
+
+.m-title-en {
+    color: #009DE2;
+    font-size: 40px;
+}
+
+.m-title-jp {
+    color: #009DE2;
+    font-size: 18px;
+}
+
+/*point*/
+.point-text {
+    position: relative;
+    width: 80%;
+}
+
+.point-number,.point-title {
+    color: #009DE2;
+}
+
+.point-number {
+    text-decoration: underline;
+}
+
+/*access*/
+.access-map {
+    width: ;
+}
+
+
 
 /*==================================================
 スライダーのためのcss
@@ -96,10 +161,6 @@ ul{
   list-style: none;
 }
 
-a{
-  color: #fff;
-}
-
 a:hover,
 a:active{
   text-decoration: none;
@@ -129,4 +190,61 @@ a:active{
   padding: 300px 0; 
   text-align: center;
   color: #fff;
+}
+
+.contact-btn-mail {
+    color: #009DE2;
+    border: 2px solid #009DE2;
+    background-color: #fff;
+}
+
+.contact-btn-LINE {
+    color: #fff;
+    border: 2px #06c755;
+    background: #06C755;
+}
+
+.contact-btn-mail {
+    font-size: 1.8rem;
+    position: relative;
+    padding: 1.5rem 2rem 1.5rem 2rem;
+    border-radius: 100vh;
+}
+
+.contact-btn-LINE {
+    font-size: 1.8rem;
+    position: relative;
+    padding: 1.5rem 2rem 1.5rem 2rem;
+    border-radius: 100vh;
+}
+
+.contact-btn-mail {
+    margin-right: 1rem;
+}
+  
+
+.arrow-right {
+    display: inline-block;
+    vertical-align: middle;
+    color: #333;
+    line-height: 1;
+    position: relative;
+    width: 1em;
+    height: 0.1em;
+    background: currentColor;
+}
+  
+.arrow-right::before {
+    content: '';
+    width: 0.65em;
+    height: 0.65em;
+    border: 0.1em solid currentColor;
+    border-left: 0;
+    border-bottom: 0;
+    transform: rotate(45deg);
+    transform-origin: top right;
+    position: absolute;
+    top: 50%;
+    right: -0.05em;
+    box-sizing: border-box;
 }

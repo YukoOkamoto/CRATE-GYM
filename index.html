@@ -6,12 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CRATEGYM</title>
     <link rel="stylesheet" href="../CRATE-GYM/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet">
+    <script src="../CRATE-GYM/js/main.js"></script>
+    <script src="https://kit.fontawesome.com/0c6a2f6aa1.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
         <div class="header_container">
-            <div class="header_title">logo</div>
-            <div class="header_nav-switch">ハンバーガーメニュー</div>
+            <div class="header_title">
+                <img src="../CRATE-GYM/images/logo_white.svg" alt="CRATE GYM">
+            </div>
+            <div class="header_nav-switch">
+                <button type="button" class="header_nav-switch-items">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
         </div>
     </header>
 
@@ -36,9 +45,9 @@
         </section>
 
         <section class="concept">
-            <h1 class="concept-title">
-                <span class="m-title-en">CONCEPT</span>
-                <span class="m-title-jp">コンセプト</span>
+            <h1 class="title">
+                <div class="m-title-en">CONCEPT</div>
+                <div class="m-title-jp">コンセプト</div>
             </h1>
             <div class="concept-container">
                 <div class="concept-img-wrap">
@@ -58,16 +67,16 @@
         </section>
 
         <section class="point">
-            <h1 class="point-title">
-                <span class="m-title-en">POINT</span>
-                <span class="m-title-jp">５つの特徴</span>
+            <h1 class="title">
+                <div class="m-title-en">POINT</div>
+                <div class="m-title-jp">５つの特徴</div>
             </h1>
             <div class="point-container">
                 <ul class="pointo-list">
                     <li>
                         <img src="../CRATE-GYM/images/画像02.jpeg">
                         <div class="point-text">
-                            <span class="number">point1</span>
+                            <span class="point-number">point1</span>
                             <h3 class="point-title">快適なトレーニング環境</h3>
                             <p>集中してワークアウトできる完全個室空間に、最新のマシンと設備を完備。NYの最先端ジムのような打ちっぱなし壁のおしゃれな空間で、ボディスタイリングトレーナーが、お客様に最適なワークアウトを提供いたします。</p>
                         </div>
@@ -75,7 +84,7 @@
                     <li>
                         <img src="../CRATE-GYM/images/画像16.jpeg">
                         <div class="point-text">
-                            <span class="number">point2</span>
+                            <span class="point-number">point2</span>
                             <h3 class="point-title">気分の上がるアメニティ</h3>
                             <p>清潔感のある空間に、無料で使えるシャワー、タオルは勿論のこと、ホテルのようなワンランク上の高級アメニティが揃っています。ワークアウト後もくつろいでお出かけのご準備ください。</p>
                         </div>
@@ -83,7 +92,7 @@
                     <li>
                         <img src="../CRATE-GYM/images/画像05.jpeg">
                         <div class="point-text">
-                            <span class="number">point3</span>
+                            <span class="point-number">point3</span>
                             <h3 class="point-title">マイロッカー&<br>ランドリーサービス</h3>
                             <p>ワークアウトが終わった後は、一人一人専用のバックにいれてフロントへお戻しください。次回来店時には綺麗にクリーニングされたトレーニングウエアをお渡ししますので、手ぶらで通えます。</p>
                         </div>
@@ -91,7 +100,7 @@
                     <li>
                         <img src="../CRATE-GYM/images/画像15.jpeg">
                         <div class="point-text">
-                            <span class="number">point4</span>
+                            <span class="point-number">point4</span>
                             <h3 class="point-title">プロテインドリンク<br>1杯無料サービス</h3>
                             <p>ワークアウト直後は適切な栄養補給がマスト。トレーナーが厳選した高品質なプロテインをご提供します。</p>
                         </div>
@@ -99,7 +108,7 @@
                     <li>
                         <img src="../CRATE-GYM/images/画像04.jpeg">
                         <div class="point-text">
-                            <span class="number">point5</span>
+                            <span class="point-number">point5</span>
                             <h3 class="point-title">トレーニングシューズ<br>ウェア無料レンタル</h3>
                             <p>最新デザインのMens,Womensのトレーニングシューズやウエアも各サイズご用意しています。持ち物を気にせず手ぶらでも通えるのはとても便利ですよ。</p>
                         </div>
@@ -109,9 +118,9 @@
         </section>
 
         <section class="price">
-            <h1 class="price-title">
-                <span class="m-title-en">PRICE</span>
-                <span class="m-title-jp">料金</span>
+            <h1 class="title">
+                <div class="m-title-en">PRICE</div>
+                <div class="m-title-jp">料金</div>
             </h1>
             <div class="cta-container">
                 <div class="cta-text">
@@ -165,18 +174,93 @@
         </section>
 
         <section class="contact">
-            <h2 class="contact-title">お問い合わせ</h2>
+            <h2 class="title">お問い合わせ</h2>
             <div class="contact-btn-container">
-                <div class="contact-btn-mail">
-                    <div class="contact-btn-mail-icon">
-                        <a href="#">メールでお問い合わせ</a>
-                    </div>
-                </div>
+                <a href="" class="contact-btn-mail"><i class="fa fas fa-envelope"></i>&nbsp;メールでお問い合わせ
+                </a>
+                <a href="" class="contact-btn-LINE"><i class="fa-brands fa-line"></i>&nbsp;LINEでお問い合わせ
+                </a>
+            </div>
+        </section>
+        
+        <section class="gallery">
+            <h1 class="title">
+                <div class="m-title-en">GALLERY</div>
+                <div class="m-title-jp">写真</div>
+            </h1>
+            <ul class="gallery-contents">
+                <li><img src="../CRATE-GYM/images/画像03.jpeg"></li>
+                <li><img src="../CRATE-GYM/images/画像22.jpeg"></li>
+                <li><img src="../CRATE-GYM/images/画像21.jpeg"></li>
+                <li><img src="../CRATE-GYM/images/画像20.jpeg"></li>
+                <li><img src="../CRATE-GYM/images/画像11.jpeg"></li>
+                <li><img src="../CRATE-GYM/images/画像08.jpeg"></li>
+                <li><img src="../CRATE-GYM/images/画像14.jpeg"></li>
+                <li><img src="../CRATE-GYM/images/画像13.jpeg"></li>
+                <li><img src="../CRATE-GYM/images/画像16.jpeg"></li>
+                <li><img src="../CRATE-GYM/images/画像17.jpeg"></li>
+            </ul>
+        </section>
+
+        <section class="cta-container">
+            <div class="cta-text">
+                <h2>
+                    入会金・月謝<span>2ヶ月無料</span>
+                    <br>
+                    1週間<span>無料退会</span>保証
+                </h2>
+            </div>
+            <div class="cta-btn">
+                <a href="#" target="_blank">
+                    無料体験<br>ご予約はこちら
+                </a>
+                <span class="arrow-right"></span>
             </div>
         </section>
 
+        <section class="access">
+            <h1 class="title">
+                <div class="m-title-en">ACCESS</div>
+                <div class="m-title-jp">アクセス・営業時間</div>
+            </h1>
+            <div class="access-contants">
+                <ul class="access-text">
+                    <li class="access-text-title">営業時間</li>
+                    <li class="access-text-info">24H可能(事前予約制)<br>定休日なし</li>
+                    <li class="access-text-title">住所</li>
+                    <li class="access-text-info">東京都中野区中野4丁目8-1</li>
+                </ul>
+                <div class="access-map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d51837.066409228326!2d139.6242423712381!3d35.70612927571936!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018f290e57a7acd%3A0x41df181c2d31806!2z5Lit6YeO5Yy65b255omA!5e0!3m2!1sja!2sjp!4v1679314230392!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+            </div>
+        
+        <section class="contact">
+            <h2 class="title">お問い合わせ</h2>
+            <div class="contact-btn-container">
+                <a href="" class="contact-btn-mail"><i class="fa fas fa-envelope"></i>&nbsp;メールでお問い合わせ
+                </a>
+                <a href="" class="contact-btn-LINE"><i class="fa-brands fa-line"></i>&nbsp;LINEでお問い合わせ
+                </a>
+            </div>
+        </section>
     </main>
     
-    <footer></footer>
+    <footer>
+        <section class="footer">
+            <hr class="hr">
+            <div class="footer-container">
+                <div class="fllowus">
+                    <img src="../CRATE-GYM/images/FLLOW US.png" alt="FLLOW US">
+                </div>
+                <div class="sns">
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                </div>
+                <div class="logo">
+                    <img src="../CRATE-GYM/images/logo_white.svg" alt="CRATE GYM">
+                </div>
+                <p class="copyright">&copy;CRATE GYM</p>
+            </div>
+        </section>
+    </footer>
 </body>
 </html>
