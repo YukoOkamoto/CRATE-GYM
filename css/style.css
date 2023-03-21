@@ -18,7 +18,9 @@ body {
     background-color: #fff;
 }
 
-li {
+ul,li {
+    margin:0;
+    padding: 0;
     list-style: none;
 }
 
@@ -28,6 +30,159 @@ img {
 }
 
 /*header*/
+header {
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    z-index: 2;
+    background-color: #fff;
+}
+
+.header_container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header_title img {
+    height: 40px;
+    padding: 5px 16px;
+}
+
+/*mainvisual-slider*/
+.slider {
+    position:relative;
+    z-index: 1;
+    height: 100vh;
+}
+
+.slider-item01 {
+    background:url(../images/画像10.jpeg);
+}
+/*
+.slider-item02 {
+    background:url(../images/画像08.jpeg);
+}
+
+.slider-item03 {
+    background:url(../images/画像03.jpeg);
+}
+
+.slider-item04 {
+    background:url(../images/画像22.jpeg);
+}
+*/
+.slider-item {
+    width: 100%;
+    height:100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.slick-dots {
+    position: relative;
+    z-index: 3;
+    text-align:center;
+    margin:-50px 0 0 0;
+}
+  
+.slick-dots li {
+    display:inline-block;
+    margin:0 5px;
+}
+  
+.slick-dots button {
+    color: transparent;
+    outline: none;
+    width:8px;
+    height:8px;
+    display:block;
+    border-radius:50%;
+    background:#B5E3F7;
+}
+  
+.slick-dots .slick-active button{
+    background:#009DE2;
+}
+
+
+/*mainvisual-text*/
+.mv-title {
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    text-transform: uppercase;
+}
+
+.mv-title-text {
+    position: relative;
+    padding: 5px;
+    background: #77c3df;
+    font-size: 24px;
+    color: white;
+    margin-right: -33px;
+    line-height: 1.3;
+    z-index:-1;
+}
+
+.mv-title-text:first-child {
+    margin-bottom: 2%;
+}
+  
+.mv-title-text::after {
+    position: absolute;
+    content: '';
+    right: -2px;
+    top: -2px;
+    border: none;
+    border-right: solid 60px white;
+    border-top: solid 45px transparent;
+    z-index:-2
+}
+
+.mv-title-text2 {
+    position: relative;
+    padding: 5px;
+    background: #77c3df;
+    font-size: 24px;
+    color: white;
+    margin-right: -33px;
+    line-height: 1.3;
+    z-index:-1;
+}
+  
+.mv-title-text2::after {
+    position: absolute;
+    content: '';
+    right: -2px;
+    top: -2px;
+    border: none;
+    border-right: solid 60px white;
+    border-top: solid 45px transparent;
+    z-index:-2
+}
+
+
+/*mv-btn*/
+.m-cta_btn {
+    color: #404040;
+    background-color: #FCBB59;
+    border-radius: 50%;
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    padding: 0;
+    font-size: 14px;
+}
+
+.m-cta_btn:hover {
+    color: #404040;
+    background: #ffa011;
+}
+
+.m-cta_btn-shadow {
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+}
 
 /*各セクションタイトル*/
 .title {
@@ -37,17 +192,32 @@ img {
 .m-title-en {
     color: #009DE2;
     font-size: 40px;
+    margin-top: 72px;
 }
 
 .m-title-jp {
     color: #009DE2;
     font-size: 18px;
+    margin-bottom: 24px;
 }
 
 /*point*/
+.point-list img {
+    width: 390px;
+    height: 390px;
+    object-fit: cover;
+}
+
+.point-title {
+    font-size: 23px;
+    line-height: 1.5;
+    padding: 16px 0 5px 0;
+}
+
 .point-text {
     position: relative;
-    width: 80%;
+    padding: 16px 20px 40px 20px;
+    line-height: 1.8;
 }
 
 .point-number,.point-title {
@@ -58,170 +228,57 @@ img {
     text-decoration: underline;
 }
 
+/*gallery*/
+.gallery-contents {
+    display: flex;
+    justify-content:space-around;
+    flex-wrap: wrap;
+    padding: 0 16px 0 16px;
+}
+
+.gallery-contents img {
+    width: 166px;
+    height: 166px;
+    object-fit: cover;
+    padding-bottom: 14px;
+}
+
 /*access*/
-.access-map {
-    width: ;
+.access-text {
+    margin: 0 72px 0 72px;
+}
+
+.access-map iframe {
+    width: 100%;
+    aspect-ratio: 16/9;
 }
 
 
-
-/*==================================================
-スライダーのためのcss
-===================================*/
-.slider {
-    position:relative;
-  z-index: 1;
-  /*↑z-indexの値をh1のz-indexの値よりも小さくして背景に回す*/
-  height: 100vh;/*スライダー全体の縦幅を画面の高さいっぱい（100vh）にする*/
-}
-/*　背景画像設定　*/
-
-.slider-item01 {
-    background:url(../images/画像.jpeg);
-}
-
-.slider-item02 {
-    background:url(../images/画像.jpeg);
-}
-
-.slider-item03 {
-    background:url(../images/画像.jpeg);
-}
-
-.slider-item04 {
-    background:url(../images/画像.jpeg);
-}
-
-.slider-item {
-    width: 100%;/*各スライダー全体の横幅を画面の高さいっぱい（100%）にする*/
-    height:100vh;/*各スライダー全体の縦幅を画面の高さいっぱい（100vh）にする*/
-    background-repeat: no-repeat;/*背景画像をリピートしない*/
-    background-position: center;/*背景画像の位置を中央に*/
-    background-size: cover;/*背景画像が.slider-item全体を覆い表示*/
-}
-
-/*矢印の設定*/
-
-/*戻る、次へ矢印の位置*/
-.slick-prev, 
-.slick-next {
-    position: absolute;/*絶対配置にする*/
-  z-index: 3;
-    top: 42%;
-    cursor: pointer;/*マウスカーソルを指マークに*/
-    outline: none;/*クリックをしたら出てくる枠線を消す*/
-    border-top: 2px solid #ccc;/*矢印の色*/
-    border-right: 2px solid #ccc;/*矢印の色*/
-    height: 25px;
-    width: 25px;
-}
-
-.slick-prev {/*戻る矢印の位置と形状*/
-    left:2.5%;
-    transform: rotate(-135deg);
-}
-
-.slick-next {/*次へ矢印の位置と形状*/
-    right:2.5%;
-    transform: rotate(45deg);
-}
-
-/*ドットナビゲーションの設定*/
-
-.slick-dots {
-  position: relative;
-  z-index: 3;
-    text-align:center;
-  margin:-50px 0 0 0;
-}
-
-.slick-dots li {
-    display:inline-block;
-  margin:0 5px;
-}
-
-.slick-dots button {
-    color: transparent;
-    outline: none;
-    width:8px;/*ドットボタンのサイズ*/
-    height:8px;/*ドットボタンのサイズ*/
-    display:block;
-    border-radius:50%;
-    background:#ccc;/*ドットボタンの色*/
-}
-
-.slick-dots .slick-active button{
-    background:#333;/*ドットボタンの現在地表示の色*/
-}
-
-/*========= レイアウトのためのCSS ===============*/
-ul{
-  margin:0;
-  padding: 0;
-  list-style: none;
-}
-
-a:hover,
-a:active{
-  text-decoration: none;
-}
-
-.mv-title {
-  position: absolute;
-  z-index: 2;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  font-size:6vw;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-}
-
-.wrapper{
-  position: relative;
-}
-
-.container{
-  background:#555;
-}
-
-.container p{
-  padding: 300px 0; 
-  text-align: center;
-  color: #fff;
-}
-
+/*contact*/
 .contact-btn-mail {
+    font-size: 1.8rem;
+    position: relative;
+    padding: 1.5rem;
+    border-radius: 100vh;
     color: #009DE2;
     border: 2px solid #009DE2;
     background-color: #fff;
 }
 
+
 .contact-btn-LINE {
+    font-size: 1.8rem;
+    position: relative;
+    padding: 1.5rem 2rem 1.5rem 2rem;
+    border-radius: 100vh;
     color: #fff;
     border: 2px #06c755;
     background: #06C755;
-}
+} 
 
-.contact-btn-mail {
-    font-size: 1.8rem;
-    position: relative;
-    padding: 1.5rem 2rem 1.5rem 2rem;
-    border-radius: 100vh;
+.contact-btn-container {
+    width: 100%;
 }
-
-.contact-btn-LINE {
-    font-size: 1.8rem;
-    position: relative;
-    padding: 1.5rem 2rem 1.5rem 2rem;
-    border-radius: 100vh;
-}
-
-.contact-btn-mail {
-    margin-right: 1rem;
-}
-  
 
 .arrow-right {
     display: inline-block;
