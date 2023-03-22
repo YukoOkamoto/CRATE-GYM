@@ -25,8 +25,29 @@ ul,li {
 }
 
 img {
-    max-width: 100%;
+    width: 100%;
+    max-width: 390px;
     vertical-align: bottom;
+}
+
+.btn,
+a.btn,
+button.btn {
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1.5;
+  position: relative;
+  display: inline-block;
+  padding: 1rem 4rem;
+  cursor: pointer;
+  user-select: none;
+  transition: all 0.3s;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  color: #fff;
+  border-radius: 0.5rem;
 }
 
 /*header*/
@@ -45,7 +66,7 @@ header {
 
 .header_title img {
     height: 40px;
-    padding: 5px 16px;
+    padding: 5px;
 }
 
 /*mainvisual-slider*/
@@ -70,7 +91,6 @@ header {
 .slider-item04 {
     background:url(../images/画像22.jpeg);
 }
-*/
 .slider-item {
     width: 100%;
     height:100vh;
@@ -105,6 +125,8 @@ header {
     background:#009DE2;
 }
 
+*/
+
 
 /*mainvisual-text*/
 .mv-title {
@@ -112,6 +134,10 @@ header {
     z-index: 2;
     top: 50%;
     text-transform: uppercase;
+}
+
+.marker {
+    background: linear-gradient(transparent 50%, #009DE2 70%);
 }
 
 .mv-title-text {
@@ -176,7 +202,7 @@ header {
 }
 
 .m-cta_btn:hover {
-    color: #404040;
+    color: #fff;
     background: #ffa011;
 }
 
@@ -201,9 +227,42 @@ header {
     margin-bottom: 24px;
 }
 
+/*concept*/
+.concept-container {
+    position: relative;
+    z-index: 1;
+}
+
+.concept-img {
+    height: 390px;
+    object-fit: cover;
+}
+
+.ractangle {
+    height: 370px;
+    background-color: #E9EBEC;
+}
+
+.concept-conent-wrap {
+    background-color: #FFFFFB;
+    padding: 32px 10px 40px 10px;
+    position: absolute;
+    top: 49%;
+    left: 1%;
+    z-index: 2;
+}
+
+.concept-heading {
+    margin-bottom: 32px;
+}
+
+.concept-text {
+    font-size: 16px;
+    line-height: 1.8;
+}
+
 /*point*/
 .point-list img {
-    width: 390px;
     height: 390px;
     object-fit: cover;
 }
@@ -226,6 +285,70 @@ header {
 
 .point-number {
     text-decoration: underline;
+}
+
+/*price*/
+.cta-contents img {
+    object-fit: cover;
+}
+
+.cta-container {
+    background-color: #E5F5FC;
+    padding: 25px 20px 48px 20px;
+}
+
+.cta-text {
+    font-size: 1rem;
+    line-height: 1.8;
+    text-align: center;
+}
+
+.dot-text {
+    padding-top: .2em;
+    background-position: top left -2px;
+    background-repeat: repeat-x;
+    background-size: 1em .3em;
+    background-image: radial-gradient(.15em .15em at center center,#009DE2,#009DE2 100%,transparent);
+    font-size: 2.3rem;
+    color: #FCBB59;
+}
+
+.cta-contents-text {
+    background-color: #fff;
+    border: solid 1px #009DE2;
+    border-radius: 10px 10px 0px 0px;
+    padding: 24px 10px 18px 10px;
+    text-align: center;
+}
+
+.cta-contents-text h3 {
+    font-size: 1.5rem;
+}
+
+.cta-contents-text span {
+    font-size: 2.3rem;
+    color: #009DE2;
+    margin-bottom: 14px;
+}
+
+.cta-contents-text p {
+    font-size: 1rem;
+    line-height: 1.3;
+}
+
+.cta-contents-img img {
+    border-radius: 0px 0px 10px 10px;
+}
+
+.cta-btn,.cta-btn a {
+  color: #fff;
+  background-color: #FCBB59;
+}
+
+.cta-btn:hover,
+.cta-btn a:hover {
+    color: #fff;
+    background-color: #ffa011;
 }
 
 /*gallery*/
