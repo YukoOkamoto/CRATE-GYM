@@ -16,6 +16,11 @@ body {
     height: 100%;
     color: #404040;
     background-color: #fff;
+    box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
 }
 
 ul,li {
@@ -31,23 +36,14 @@ img {
 }
 
 .btn,
-a.btn,
-button.btn {
-  font-size: 1.6rem;
-  font-weight: 700;
-  line-height: 1.5;
-  position: relative;
+a.btn {
   display: inline-block;
-  padding: 1rem 4rem;
+  line-height: 1.5;
   cursor: pointer;
   user-select: none;
   transition: all 0.3s;
   text-align: center;
-  vertical-align: middle;
-  text-decoration: none;
-  letter-spacing: 0.1em;
   color: #fff;
-  border-radius: 0.5rem;
 }
 
 /*header*/
@@ -191,14 +187,21 @@ header {
 
 /*mv-btn*/
 .m-cta_btn {
-    color: #404040;
     background-color: #FCBB59;
     border-radius: 50%;
-    display: inline-block;
     width: 100px;
     height: 100px;
     padding: 0;
-    font-size: 14px;
+    font-size: 1rem;
+    position: fixed;
+    bottom: 2%;
+    right: 2%;
+    z-index: 5;
+}
+
+.m-cta_btn-text {
+    padding: 10px 0;
+    vertical-align: bottom;
 }
 
 .m-cta_btn:hover {
@@ -207,7 +210,7 @@ header {
 }
 
 .m-cta_btn-shadow {
-    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 2px 2px #404040;
 }
 
 /*各セクションタイトル*/
@@ -231,6 +234,7 @@ header {
 .concept-container {
     position: relative;
     z-index: 1;
+    padding: 0 20px;
 }
 
 .concept-img {
@@ -246,9 +250,9 @@ header {
 .concept-conent-wrap {
     background-color: #FFFFFB;
     padding: 32px 10px 40px 10px;
+    margin: 0 8px;
     position: absolute;
     top: 49%;
-    left: 1%;
     z-index: 2;
 }
 
@@ -265,6 +269,7 @@ header {
 .point-list img {
     height: 390px;
     object-fit: cover;
+    margin: 0;
 }
 
 .point-title {
@@ -288,6 +293,10 @@ header {
 }
 
 /*price*/
+.price {
+    text-align: center;
+}
+
 .cta-contents img {
     object-fit: cover;
 }
@@ -295,12 +304,12 @@ header {
 .cta-container {
     background-color: #E5F5FC;
     padding: 25px 20px 48px 20px;
+    margin-bottom: 40px;
 }
 
 .cta-text {
     font-size: 1rem;
     line-height: 1.8;
-    text-align: center;
 }
 
 .dot-text {
@@ -308,7 +317,7 @@ header {
     background-position: top left -2px;
     background-repeat: repeat-x;
     background-size: 1em .3em;
-    background-image: radial-gradient(.15em .15em at center center,#009DE2,#009DE2 100%,transparent);
+    background-image: radial-gradient(.10em .10em at center center,#009DE2,#009DE2 100%,transparent);
     font-size: 2.3rem;
     color: #FCBB59;
 }
@@ -318,7 +327,6 @@ header {
     border: solid 1px #009DE2;
     border-radius: 10px 10px 0px 0px;
     padding: 24px 10px 18px 10px;
-    text-align: center;
 }
 
 .cta-contents-text h3 {
@@ -341,14 +349,80 @@ header {
 }
 
 .cta-btn,.cta-btn a {
-  color: #fff;
-  background-color: #FCBB59;
+    color: #fff;
+    font-size: 1.5rem;
+    background-color: #FCBB59;
+    width: 80%;
+    height: 100px;
+    padding: 0;
+    bottom: 2%;
+    right: 2%;
+    z-index: 4;
+    position: relative;
+    border-radius: 10px 10px 10px 10px;
 }
 
 .cta-btn:hover,
 .cta-btn a:hover {
     color: #fff;
     background-color: #ffa011;
+}
+
+.cta-btn-text {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 13%;
+    left: 15%;
+}
+
+/*course*/
+.course-contents {
+    padding: 0 20px;
+    text-align: center;
+    letter-spacing: 0.5em;
+}
+
+.course-item h3 {
+    font-size: 0.8rem;
+    height: 40px;
+    margin-bottom: 10px;
+    background-color: #E5F5FC;
+    padding-top: 8px;
+}
+
+.course-item-h3 {
+    font-size: 1.3rem;
+}
+
+.course-item-total-price {
+    font-size: 1.3rem;
+}
+
+.course-item-per-price {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 8px;
+}
+
+.course-item-per-price-left {
+    margin-right: 8px;
+}
+
+.course-item-text {
+    font-size: 0.7rem;
+    letter-spacing: normal;
+    text-align: left;
+    padding: 0 20px;
+    margin-bottom: 32px;
+}
+
+.course-item-line {
+    width: 70%;
+    color: #404040;
+    text-align: center;
 }
 
 /*gallery*/
@@ -406,10 +480,8 @@ header {
 .arrow-right {
     display: inline-block;
     vertical-align: middle;
-    color: #333;
-    line-height: 1;
     position: relative;
-    width: 1em;
+    width: 1.5em;
     height: 0.1em;
     background: currentColor;
 }
