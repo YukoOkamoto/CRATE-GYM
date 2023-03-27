@@ -6,8 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CRATEGYM</title>
     <link rel="stylesheet" href="../CRATE-GYM/css/style.css">
-    <script src="../CRATE-GYM/js/main.js"></script>
+    <script src="js/main.js"></script>
     <script src="https://kit.fontawesome.com/0c6a2f6aa1.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Armenian:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -26,11 +29,11 @@
     <main id="main" class="main">
         <section class="mainvisual">
             <div class="mv-title">
-                <div class="mv-title-text">
-                    入会金・月謝<span class="marker">２ヶ月無料</span>
+                <div class="mv-title1">
+                    <h1 class="mv-title1-text"> 入会金・月謝<span class="marker">２ヶ月無料</span></h1>
                 </div>
-                <div class="mv-title-text2">
-                    1週間<span class="marker">無料退会</span>保証
+                <div class="mv-title2">
+                    <h1 class="mv-title2-text"> 1週間<span class="marker">無料退会</span>保証</h1>
                 </div>
             </div>
             <div class="mv-slider">
@@ -43,10 +46,16 @@
                     -->
                 </ul>
             </div>
-            <a href="#" class="btn m-cta_btn m-cta_btn-shadow">
-                <span class="m-cta_btn-text">無料体験<br>お申込み</span><br>
-                <span class="arrow-right"></span>
-            </a>
+            <div class="m-cta-btn btn-shadow">
+                <ul class="m-cta-btn-container">
+                    <li>
+                        <a href="#" class="m-cta-btn-text" target="_blank">無料体験<br>お申込み</a>
+                    </li>
+                    <li>
+                        <spam class="m-arrow-right"></span>
+                    </li>
+                </ul>
+            </div>
         </section>
 
         <section class="concept">
@@ -59,9 +68,9 @@
                     <img class="concept-img" src="images/画像12.jpeg" alt="CRATE GYM">
                     <div class="ractangle"></div>
                 </div>
-                <div class="concept-conent-wrap">
+                <div class="concept-text-wrap">
                     <h2 class="concept-heading">
-                        意志のあるカラダへ
+                        意志のある<br>カラダへ
                     </h2>
                     <p class="concept-text">
                         選りすぐりのボディスタイリングトレーナーがマンツーマンで指導するパーソナルワークアウトジムです。
@@ -83,6 +92,7 @@
                         <img src="images/画像02.jpeg">
                         <div class="point-text">
                             <span class="point-number">point1</span>
+                            <div class="point-number-line"></div>
                             <h3 class="point-title">快適なトレーニング環境</h3>
                             <p>集中してワークアウトできる完全個室空間に、最新のマシンと設備を完備。NYの最先端ジムのような打ちっぱなし壁のおしゃれな空間で、ボディスタイリングトレーナーが、お客様に最適なワークアウトを提供いたします。</p>
                         </div>
@@ -91,6 +101,7 @@
                         <img src="images/画像16.jpeg">
                         <div class="point-text">
                             <span class="point-number">point2</span>
+                            <div class="point-number-line"></div>
                             <h3 class="point-title">気分の上がるアメニティ</h3>
                             <p>清潔感のある空間に、無料で使えるシャワー、タオルは勿論のこと、ホテルのようなワンランク上の高級アメニティが揃っています。ワークアウト後もくつろいでお出かけのご準備ください。</p>
                         </div>
@@ -99,6 +110,7 @@
                         <img src="images/画像05.jpeg">
                         <div class="point-text">
                             <span class="point-number">point3</span>
+                            <div class="point-number-line"></div>
                             <h3 class="point-title">マイロッカー&<br>ランドリーサービス</h3>
                             <p>ワークアウトが終わった後は、一人一人専用のバックにいれてフロントへお戻しください。次回来店時には綺麗にクリーニングされたトレーニングウエアをお渡ししますので、手ぶらで通えます。</p>
                         </div>
@@ -107,6 +119,7 @@
                         <img src="images/画像15.jpeg">
                         <div class="point-text">
                             <span class="point-number">point4</span>
+                            <div class="point-number-line"></div>
                             <h3 class="point-title">プロテインドリンク<br>1杯無料サービス</h3>
                             <p>ワークアウト直後は適切な栄養補給がマスト。トレーナーが厳選した高品質なプロテインをご提供します。</p>
                         </div>
@@ -115,6 +128,7 @@
                         <img src="images/画像04.jpeg">
                         <div class="point-text">
                             <span class="point-number">point5</span>
+                            <div class="point-number-line"></div>
                             <h3 class="point-title">トレーニングシューズ<br>ウェア無料レンタル</h3>
                             <p>最新デザインのMens,Womensのトレーニングシューズやウエアも各サイズご用意しています。持ち物を気にせず手ぶらでも通えるのはとても便利ですよ。</p>
                         </div>
@@ -132,8 +146,9 @@
                 <div class="cta-text">
                     <h2>
                         入会金・月謝<span class="dot-text">2ヶ月無料</span>
-                        <br>
-                        1週間<span class="dot-text">無料退会</span>保証
+                    </h2>
+                    <h2>
+                        1週間<span class="dot-text dot-text-2">無料退会</span>保証
                     </h2>
                 </div>
                 <div class="cta-contents">
@@ -155,15 +170,17 @@
                     </div>
 
                 </div>
-                <div class="btn cta-btn">
-                    <ul class="cta-btn-text">
-                        <li>
-                            <a href="#" target="_blank">無料体験<br>ご予約はこちら</a>
-                        </li>
-                        <li>
-                            <spam  class="arrow-right"></span>
-                        </li>
-                    </ul>
+                <div class="cta-btn-position">
+                    <div class="btn cta-btn btn-shadow">
+                        <ul class="cta-btn-text">
+                            <li>
+                                <a href="#" target="_blank">無料体験<br>ご予約はこちら</a>
+                            </li>
+                            <li>
+                                <spam  class="arrow-right"></span>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
             <div class="course-container">
@@ -175,7 +192,7 @@
                             <p class="course-item-per-price-left">1回あたり</p>
                             <p>&yen;12,000</p>
                         </div>
-                        <hr class="course-item-line">
+                        <div class="course-item-line"></div>
                         <p class="course-item-text">「始めてみたいけど自信がない」「続けられるか不安」そんな方に。 まずは1ヶ月間でCRATE GYMのパーソナルトレーニングの魅力を実感して頂くコースです。</p>
                     </li>
                     <li class="course-item">
@@ -185,7 +202,7 @@
                             <p class="course-item-per-price-left">1回あたり</p>
                             <p>&yen;12,000</p>
                         </div>
-                        <hr class="course-item-line">
+                        <div class="course-item-line"></div>
                         <p class="course-item-text">「始めてみたいけど自信がない」「続けられるか不安」そんな方に。 まずは1ヶ月間でCRATE GYMのパーソナルトレーニングの魅力を実感して頂くコースです。</p>
                     </li>
                     <li class="course-item">
@@ -195,7 +212,7 @@
                             <p class="course-item-per-price-left">1回あたり</p>
                             <p>&yen;11,000</p>
                         </div>
-                        <hr class="course-item-line">
+                        <div class="course-item-line"></div>
                         <p class="course-item-text">「始めてみたいけど自信がない」「続けられるか不安」そんな方に。 まずは1ヶ月間でCRATE GYMのパーソナルトレーニングの魅力を実感して頂くコースです。</p>
                     </li>
                 </ul>
@@ -203,11 +220,13 @@
         </section>
 
         <section class="contact">
-            <h2 class="title">お問い合わせ</h2>
+            <h2 class="title contact-title">お問い合わせ</h2>
             <div class="contact-btn-container">
-                <a href="" class="contact-btn-mail"><i class="fa fas fa-envelope"></i>&nbsp;メールでお問い合わせ
+                <a href="" class="contact-btn-mail btn-shadow">
+                    <i class="fa fas fa-envelope"></i>&nbsp;メールでお問い合わせ
                 </a>
-                <a href="" class="contact-btn-LINE"><i class="fa-brands fa-line"></i>&nbsp;LINEでお問い合わせ
+                <a href="" class="contact-btn-LINE btn-shadow">
+                    <i class="fa-brands fa-line"></i>&nbsp;LINEでお問い合わせ
                 </a>
             </div>
         </section>
@@ -234,16 +253,21 @@
         <section class="cta-container">
             <div class="cta-text">
                 <h2>
-                    入会金・月謝<span>2ヶ月無料</span>
-                    <br>
-                    1週間<span>無料退会</span>保証
+                    入会金・月謝<span class="dot-text">2ヶ月無料</span>
+                </h2>
+                <h2>
+                    1週間<span class="dot-text dot-text-2">無料退会</span>保証
                 </h2>
             </div>
-            <div class="btn cta-btn">
-                <a href="#" target="_blank">
-                    無料体験<br>ご予約はこちら
-                </a>
-                <span class="arrow-right"></span>
+            <div class="btn cta-btn btn-shadow">
+                <ul class="cta-btn-text">
+                    <li>
+                        <a href="#" target="_blank">無料体験<br>ご予約はこちら</a>
+                    </li>
+                    <li>
+                        <spam  class="arrow-right"></span>
+                    </li>
+                </ul>
             </div>
         </section>
 
@@ -254,22 +278,26 @@
             </h1>
             <div class="access-contants">
                 <ul class="access-text">
-                    <li class="access-text-title">営業時間</li>
+                    <li class="access-text-title-time">営業時間</li>
+                    <hr class="access-text-title-line">
                     <li class="access-text-info">24H可能(事前予約制)<br>定休日なし</li>
-                    <li class="access-text-title">住所</li>
+                    <li class="access-text-title-adress">住所</li>
+                    <hr class="access-text-title-line">
                     <li class="access-text-info">東京都中野区中野4丁目8-1</li>
                 </ul>
-                <div class="access-map">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d51837.066409228326!2d139.6242423712381!3d35.70612927571936!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018f290e57a7acd%3A0x41df181c2d31806!2z5Lit6YeO5Yy65b255omA!5e0!3m2!1sja!2sjp!4v1679314230392!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div class="access-map gmap-wrap">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3239.7673023009465!2d139.6637841!3d35.7073435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018f290e48d9fed%3A0xe8f30b65b727ce05!2z44CSMTY0LTAwMDEg5p2x5Lqs6YO95Lit6YeO5Yy65Lit6YeO77yU5LiB55uu77yY4oiS77yRIOS4remHjuWMuuW9ueaJgA!5e0!3m2!1sja!2sjp!4v1679838212510!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
         
         <section class="contact">
-            <h2 class="title">お問い合わせ</h2>
+            <h2 class="title contact-title">お問い合わせ</h2>
             <div class="contact-btn-container">
-                <a href="" class="btn contact-btn-mail"><i class="fa fas fa-envelope"></i>&nbsp;メールでお問い合わせ
+                <a href="" class="contact-btn-mail btn-shadow">
+                    <i class="fa fas fa-envelope"></i>&nbsp;メールでお問い合わせ
                 </a>
-                <a href="" class="btn contact-btn-LINE"><i class="fa-brands fa-line"></i>&nbsp;LINEでお問い合わせ
+                <a href="" class="contact-btn-LINE btn-shadow">
+                    <i class="fa-brands fa-line"></i>&nbsp;LINEでお問い合わせ
                 </a>
             </div>
         </section>
@@ -277,14 +305,18 @@
     
     <footer>
         <section class="footer">
-            <hr class="hr">
+            <hr class="footer-hr">
             <div class="footer-container">
                 <div class="followus">
                     <img src="images/FOLLOW US.png" alt="FOLLOW US">
                 </div>
                 <div class="sns">
-                    <i class="fa-brands fa-instagram"></i>
-                    <i class="fa-brands fa-twitter"></i>
+                    <a href="https://www.instagram.com/">
+                        <i class="sns-icon fa-brands fa-instagram"></i>
+                    </a> 
+                    <a href="https://twitter.com/home">
+                        <i class="sns-icon fa-brands fa-twitter"></i>
+                    </a>
                 </div>
                 <div class="logo">
                     <img src="images/logo_white.svg" alt="CRATE GYM">
