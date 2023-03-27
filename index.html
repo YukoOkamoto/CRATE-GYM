@@ -5,12 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CRATEGYM</title>
-    <link rel="stylesheet" href="../CRATE-GYM/css/style.css">
-    <script src="js/main.js"></script>
+    <link rel="stylesheet" href="css/style.css">
     <script src="https://kit.fontawesome.com/0c6a2f6aa1.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Armenian:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/main.js"></script>
 </head>
 <body>
     <header>
@@ -19,10 +20,24 @@
                 <img src="images/logo_white.svg" alt="CRATE GYM">
             </div>
             <div class="header_nav-switch">
-                <button type="button" class="header_nav-switch-items">
+                <button type="button" class="header_nav-switch-items active" id="nav-hamburger">
                     <span></span><span></span><span></span>
                 </button>
             </div>
+            <nav class="slide_in active"> 
+                <div class="nav_contents active" id="js-nav_contents">
+                    <h1><img src="images/logo_black.svg" alt="CRATEGYM"></h1>
+
+                    <ul class="nav-items">
+                        <li><a href="#main">TOP</a></li>
+                        <li><a href="#concept">コンセプト</a></li>
+                        <li><a href="#point">施設</a></li>
+                        <li><a href="#price">料金</a></li>
+                        <li><a href="#access">アクセス</a></li>
+                        <li><a href="#contact">お問い合わせ</a></li>
+                    </ul>
+                </div>
+            </nav>
         </div>
     </header>
 
@@ -58,7 +73,7 @@
             </div>
         </section>
 
-        <section class="concept">
+        <section id="concept" class="concept">
             <h1 class="title">
                 <div class="m-title-en">CONCEPT</div>
                 <div class="m-title-jp">コンセプト</div>
@@ -81,7 +96,7 @@
             </div>
         </section>
 
-        <section class="point">
+        <section id="point" class="point">
             <h1 class="title">
                 <div class="m-title-en">POINT</div>
                 <div class="m-title-jp">５つの特徴</div>
@@ -137,7 +152,7 @@
             </div>
         </section>
 
-        <section class="price">
+        <section id="price" class="price">
             <h1 class="title">
                 <div class="m-title-en">PRICE</div>
                 <div class="m-title-jp">料金</div>
@@ -165,21 +180,20 @@
                             ジムと自分の相性をご確認ください。<br>
                         </p>
                     </div>
-                    <div class="cta-contents-img">
+                    <div class="cta-contents-img cta-contents-img-relative">
                         <img src="images/画像09.jpeg">
                     </div>
-
-                </div>
-                <div class="cta-btn-position">
-                    <div class="btn cta-btn btn-shadow">
-                        <ul class="cta-btn-text">
-                            <li>
-                                <a href="#" target="_blank">無料体験<br>ご予約はこちら</a>
-                            </li>
-                            <li>
-                                <spam  class="arrow-right"></span>
-                            </li>
-                        </ul>
+                    <div class="btn cta-btn cta-btn-absolute">
+                        <div class="btn-shadow">
+                            <ul class="cta-btn-text">
+                                <li>
+                                    <a href="#" target="_blank">無料体験<br>ご予約はこちら</a>
+                                </li>
+                                <li>
+                                    <spam  class="arrow-right"></span>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -219,7 +233,7 @@
             </div>
         </section>
 
-        <section class="contact">
+        <section id="contact" class="contact">
             <h2 class="title contact-title">お問い合わせ</h2>
             <div class="contact-btn-container">
                 <a href="" class="contact-btn-mail btn-shadow">
@@ -271,7 +285,7 @@
             </div>
         </section>
 
-        <section class="access">
+        <section id="access" class="access">
             <h1 class="title">
                 <div class="m-title-en">ACCESS</div>
                 <div class="m-title-jp">アクセス・営業時間</div>
