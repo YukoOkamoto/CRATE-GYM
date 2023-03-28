@@ -1,7 +1,12 @@
 @charset "utf-8";
 /*共通*/
 html {
-    font-size: 100%;
+    font-size: 62.5%;
+}
+
+p {
+    font-size: 1.6rem;
+    line-height: 1.8;
 }
 
 * {
@@ -50,71 +55,68 @@ a.btn {
 }
 
 /*header*/
-header {
+.header_container {
     position: fixed;
     width: 100%;
-    height: 60px;
-    z-index: 6;
+    height: 80px;
     background-color: #fff;
-}
-
-.header_container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    z-index: 6;
 }
 
-.header_title img {
-    height: 40px;
-    padding: 8px;
+.header_logo img {
+    height: 67px;
+    margin-left: 8px;
 }
 
-.header_nav-switch-items {
+.header_nav-btn-items {
     position: relative;
     margin: 8px;
     background:#FFF;
     cursor: pointer;
-    width: 50px;
-    height:50px;
+    width: 55px;
+    height:55px;
     border-radius: 50px;
 }
 
-.header_nav-switch-items span{
+.header_nav-btn-items span{
     display: inline-block;
     transition: all .4s;
     position: absolute;
-    left:13px;
+    left:15px;
     height: 2px;
     border-radius: 2px;
     background: #404040;
     width: 45%;
 }
 
-.header_nav-switch-items span:nth-of-type(1) {
+.header_nav-btn-items span:nth-of-type(1) {
     top:15px; 
 }
 
-.header_nav-switch-items span:nth-of-type(2) {
+.header_nav-btn-items span:nth-of-type(2) {
     top:23px;
 }
 
-.header_nav-switch-items span:nth-of-type(3) {
+.header_nav-btn-items span:nth-of-type(3) {
     top:31px;
 }
 
 /*menu-btn-active*/
-.header_nav-switch-items.active span:nth-of-type(1) {
+.header_nav-btn-items.active span:nth-of-type(1) {
     top: 18px;
     left: 18px;
     transform: translateY(6px) rotate(-45deg);
     width: 30%;
 }
 
-.header_nav-switch-items.active span:nth-of-type(2) {
+.header_nav-btn-items.active span:nth-of-type(2) {
   opacity: 0;
 }
 
-.header_nav-switch-items.active span:nth-of-type(3){
+.header_nav-btn-items.active span:nth-of-type(3){
     top: 30px;
     left: 18px;
     transform: translateY(-6px) rotate(45deg);
@@ -142,19 +144,19 @@ header {
 }
 
 .slider-item01 {
-    background:url(../images/画像10.jpeg);
+    background:url(../images/slider-item01.jpeg);
 }
 /*
 .slider-item02 {
-    background:url(../images/画像08.jpeg);
+    background:url(../images/slider-item02.jpeg);
 }
 
 .slider-item03 {
-    background:url(../images/画像03.jpeg);
+    background:url(../images/slider-item03.jpeg);
 }
 
 .slider-item04 {
-    background:url(../images/画像22.jpeg);
+    background:url(../images/slider-item04_gallery2_bar_front.jpeg);
 }
 .slider-item {
     width: 100%;
@@ -198,8 +200,8 @@ header {
     position: absolute;
     z-index: 2;
     top: 70%;
-    text-transform: uppercase;
 }
+
 .marker {
     background: linear-gradient(transparent 50%, #009DE2 70%);
 }
@@ -222,16 +224,14 @@ header {
 .mv-title1-text,.mv-title2-text {
     position: absolute;
     top: -45px;
-    font-size: 1.3rem;
+    font-size: 2rem;
     font-weight: normal;
     padding: 8px 8px 8px 16px;
 }
 
 /*mv-btn*/
-.m-cta-btn {
+.mv-cta-btn {
     background-color: #FCBB59;
-    font-size: 0.8rem;
-    text-align: center;
     border-radius: 50%;
     width: 100px;
     height: 100px;
@@ -239,34 +239,33 @@ header {
     bottom: 2%;
     right: 2%;
     z-index: 5;
-    padding-top: 20px;
-    box-sizing: border-box;
 }
 
-.m-cta-btn-text {
+.mv-cta-btn {
     color: #404040;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.m-cta-btn:hover {
+.mv-cta-btn:hover {
     color: #404040;
     background: #ffa011;
 }
 
 .m-arrow-right {
-    display: inline-block;
-    vertical-align: middle;
     position: relative;
     width: 1.5em;
     height: 0.1em;
-    background: currentColor;
-    color: #404040;
+    background: #404040;
 }
   
 .m-arrow-right::before {
     content: '';
     width: 0.65em;
     height: 0.65em;
-    border: 0.1em solid currentColor;
+    border: 0.1em solid #404040;
     border-left: 0;
     border-bottom: 0;
     transform: rotate(45deg);
@@ -275,7 +274,6 @@ header {
     top: 50%;
     right: -0.05em;
     box-sizing: border-box;
-    color: #404040;
 }
 
 
@@ -286,13 +284,13 @@ header {
 
 .m-title-en {
     color: #009DE2;
-    font-size: 40px;
+    font-size: 4rem;
     margin-top: 72px;
 }
 
 .m-title-jp,.contact-title {
     color: #009DE2;
-    font-size: 18px;
+    font-size: 1.8rem;
     margin-bottom: 24px;
     font-weight: normal;
 }
@@ -303,8 +301,6 @@ header {
 }
 
 .concept-container {
-    position: relative;
-    z-index: 1;
     padding: 0 20px;
 }
 
@@ -313,48 +309,32 @@ header {
     object-fit: cover;
 }
 
-.ractangle {
-    height: 410px;
-    background-color: #E9EBEC;
-}
-
 .concept-text-wrap {
-    background-color: #FFFFFB;
-    padding: 40px 10px 40px 10px;
-    margin: 0 8px;
-    width: 80%;
-    position: absolute;
-    top: 47%;
-    z-index: 2;
-    text-align: left;
-}
-
-.concept-heading {
-    margin-bottom: 32px;
+    background-color: #E9EBEC;
+    padding: 8px;
 }
 
 .concept-text {
-    font-size: 16px;
-    line-height: 1.8;
+    background-color: #fff;
+    padding: 24px 16px;
+    z-index: 2;
+    text-align: left;
+    transform: translateY(-20px);
+}
+
+.concept-h3 {
+    font-size: 2.4rem;
+    margin-bottom: 32px;
 }
 
 /*point*/
 .point-list img {
     height: 390px;
     object-fit: cover;
-    margin: 0;
-}
-
-.point-title {
-    font-size: 23px;
-    line-height: 1.5;
-    padding: 16px 0 5px 0;
 }
 
 .point-text {
-    position: relative;
-    padding: 16px 20px 40px 20px;
-    line-height: 1.8;
+    margin: 16px 20px 40px 20px;
 }
 
 .point-number,.point-title {
@@ -362,15 +342,16 @@ header {
 }
 
 .point-number {
-    display: block;
+    display: inline-block;
     width: 20%;
-    padding: 0 8px;
+    font-size: 1.6rem;
+    text-align: center;
+    border-bottom: 1px solid #009DE2;
 }
 
-.point-number-line {
-    display: block;
-    width: 20%;
-    border-top: 1px solid #009DE2;
+.point-title {
+    font-size: 2.4rem;
+    margin: 16px 0 5px;
 }
 
 /*price*/
@@ -379,7 +360,7 @@ header {
 }
 
 .cta-text {
-    font-size: 1rem;
+    font-size: 2rem;
     line-height: 1.6;
     margin-bottom: 32px;
 }
@@ -390,7 +371,7 @@ header {
     background-repeat: repeat-x;
     background-size: 1em .3em;
     background-image: radial-gradient(.10em .10em at center center,#009DE2,#009DE2 100%,transparent);
-    font-size: 2.2rem;
+    font-size: 3.2rem;
     color: #FCBB59;
 }
 
@@ -400,7 +381,7 @@ header {
 
 .cta-container {
     background-color: #E5F5FC;
-    padding: 40px 20px 96px 20px;
+    padding: 40px 20px;
     margin-bottom: 40px;
     text-align: center;
 }
@@ -413,19 +394,14 @@ header {
 }
 
 .cta-contents-text h3 {
-    font-size: 1.5rem;
+    font-size: 2rem;
     margin-bottom: 16px;
 }
 
 .cta-contents-text span {
-    font-size: 2.3rem;
+    font-size: 3.2rem;
     color: #009DE2;
     margin-bottom: 14px;
-}
-
-.cta-contents-text p {
-    font-size: 1rem;
-    line-height: 1.3;
 }
 
 .cta-contents-img img {
@@ -435,7 +411,7 @@ header {
 /*cta-btn*/
 .cta-btn,.cta-btn a {
     color: #fff;
-    font-size: 1.5rem;
+    font-size: 2rem;
     background-color: #FCBB59;
     width: 80%;
     height: 100px;
@@ -451,23 +427,13 @@ header {
 }
 
 .cta-btn-text {
-    width: 80%;
     display: flex;
     justify-content: center;
     align-items: center;
-    position: absolute;
-    top: 13%;
-    left: 15%;
 }
 
-.cta-contents {
-    position: relative;
-}
-
-.cta-btn-absolute {
-    position: absolute;
-    top: 95%;
-    left: 10%;
+.cta-btn {
+    transform: translateY(-20px);
 }
 
 /*course*/
@@ -478,20 +444,20 @@ header {
     letter-spacing: 0.3em;
 }
 
-.course-item h3 {
-    font-size: 0.8rem;
+.course-item h4 {
+    font-size: 1.8rem;
     height: 40px;
     margin-bottom: 10px;
     background-color: #E5F5FC;
     padding-top: 8px;
 }
 
-.course-item-h3 {
-    font-size: 1.4rem;
+.course-item-h4 {
+    font-size: 2rem;
 }
 
 .course-item-total-price {
-    font-size: 1.3rem;
+    font-size: 1.8rem;
 }
 
 .course-item-per-price {
@@ -511,8 +477,6 @@ header {
 }
 
 .course-item-text {
-    font-size: 0.7rem;
-    letter-spacing: normal;
     text-align: left;
     padding: 0 20px;
     margin-bottom: 32px;
@@ -541,6 +505,7 @@ header {
 /*access*/
 .access-text {
     margin: 0 72px;
+    font-size: 1.6rem;
 }
 
 .gmap-wrap{
@@ -570,17 +535,15 @@ header {
     margin-bottom: 16px;
 }
 
-.access-text-title-time {
-    padding-left: 9px;
-}
-
-.access-text-title-adress {
-    padding-left: 25px;
+.access-text-title {
+    display: inline-block;
+    width: 35%;
+    text-align: center;
+    border-bottom: 1px solid #404040;
 }
 
 .access-text-info {
-    margin-left: 30px;
-    margin-bottom: 24px;
+    margin: 8px 0 24px 30px;
 }
 
 
@@ -593,7 +556,7 @@ header {
 
 .contact-btn-mail, .contact-btn-LINE {
     display: inline-block;
-    font-size: 1rem;
+    font-size: 1.6rem;
     margin: 0 auto;
     width: 55%;
     padding: 0.5rem;
@@ -670,7 +633,7 @@ header {
 }
 
 .sns-icon {
-    font-size: 35px;
+    font-size: 3.5rem;
     margin: 0 16px;
 }
 
@@ -685,6 +648,6 @@ header {
 }
 
 .copyright {
-    font-size: 11px;
+    font-size: 1rem;
     margin-bottom: 32px;
 }

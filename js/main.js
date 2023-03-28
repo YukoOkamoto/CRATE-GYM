@@ -1,6 +1,9 @@
 /*ハンバーガーメニュー*/
-$(".header_nav-switch-items").click(function () {
-    $(this).toggleClass('active');
+const ham = $('#js-nav-hamburger'); 
+const nav = $('#js-nav_contents'); 
+ham.on('click', function () { 
+    ham.toggleClass('active'); 
+    nav.toggleClass('active'); 
 });
 
 /*mainvisual*/
