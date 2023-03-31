@@ -5,31 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CRATEGYM</title>
+    <link rel="shortcut icon" href="images/logo_white.svg">
+    <!-- <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/> -->
     <link rel="stylesheet" href="css/style.css">
     <script src="https://kit.fontawesome.com/0c6a2f6aa1.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Armenian:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="js/main.js"></script>
+
 </head>
+
 <body>
     <header>
         <div class="header_container">
-            <div class="header_logo">
-                <img src="images/logo_white.svg" alt="CRATE GYM">
-            </div>
-            <div class="header_nav-btn">
-                <button type="button" class="header_nav-btn-items" id="js-nav-hamburger">
+            <a href="#" class="header_logo" ><img src="images/logo_white.svg" alt="CRATE GYM"></a>
+            <nav class="header_nav">
+                <button type="button" class="header_nav_btn">
                     <span></span><span></span><span></span>
                 </button>
-            </div>
-<!--             
-            <nav class="slide_in"> 
-                <div class="nav_contents" id="js-nav_contents">
-                    <h1><img src="images/logo_black.svg" alt="CRATEGYM"></h1>
-
-                    <ul class="nav-items">
+                <div class="slide_in">
+                    <img src="images/logo_black.svg" alt="CRATEGYM">
+                    <ul class="nav-menu">
                         <li><a href="#main">TOP</a></li>
                         <li><a href="#concept">コンセプト</a></li>
                         <li><a href="#point">施設</a></li>
@@ -38,7 +35,7 @@
                         <li><a href="#contact">お問い合わせ</a></li>
                     </ul>
                 </div>
-            </nav> -->
+            </nav>
         </div>
     </header>
 
@@ -52,24 +49,16 @@
                     <h1 class="mv-title2-text"> 1週間<span class="marker">無料退会</span>保証</h1>
                 </div>
             </div>
-            <div class="mv-slider">
-                <ul class="slider">
-                    <li class="slider-item slider-item01"></li>
-                    <!-- 
-                    <li class="slider-item slider-item02"></li>
-                    <li class="slider-item slider-item03"></li>
-                    <li class="slider-item slider-item04"></li>
-                    -->
-                </ul>
+            <div class="slider">
+                <div><img src="images/slider-item01.jpeg"></div>
+                <div><img src="images/slider-item02.jpeg"></div>
+                <div><img src="images/slider-item03.jpeg"></div>
+                <div><img src="images/slider-item04_gallery2_bar_front.jpeg"></div>
             </div>
-            <div class="mv-cta-btn btn-shadow">
-                <a href="#" class="mv-cta-btn-text" target="_blank">
-                    <span>無料体験<br>お申込み</span>
-                </a>
-                <a>
-                    <span class="m-arrow-right"></span>
-                </a>
-            </div>
+            <a href="#"  class="mv-cta-btn btn-shadow" target="_blank">
+                <span class="mv-cta-btn-text">無料体験<br>お申込み</span>
+                <span class="m-arrow-right"></span>
+            </a>
         </section>
 
         <section id="concept" class="concept">
@@ -82,7 +71,8 @@
                 <div class="concept-text-wrap">
                     <div class="concept-text">
                         <h3 class="concept-h3">
-                            意志のある<br>カラダへ
+                            <span>意志のある</span>
+                            <span>カラダへ</span>
                         </h3>
                         <p>選りすぐりのボディスタイリングトレーナーがマンツーマンで指導するパーソナルワークアウトジムです。</p>
                         <p>気分の上がる居心地のいい空間で、痩せるだけじゃなくしっかりと筋肉を作り、望んだカラダを長期的に持続させることであなたのライフスタイルをさらに豊かなステージへとアップグレードします。</p>
@@ -98,7 +88,7 @@
             </h2>
             <div class="point-container">
                 <ul class="point-list">
-                    <li>
+                    <li class="point-flex-row">
                         <img src="images/point1.jpeg">
                         <div class="point-text">
                             <span class="point-number">point 1</span>
@@ -106,7 +96,7 @@
                             <p>集中してワークアウトできる完全個室空間に、最新のマシンと設備を完備。NYの最先端ジムのような打ちっぱなし壁のおしゃれな空間で、ボディスタイリングトレーナーが、お客様に最適なワークアウトを提供いたします。</p>
                         </div>
                     </li>
-                    <li>
+                    <li  class="point-flex-revers">
                         <img src="images/point2.jpeg">
                         <div class="point-text">
                             <span class="point-number">point 2</span>
@@ -114,7 +104,7 @@
                             <p>清潔感のある空間に、無料で使えるシャワー、タオルは勿論のこと、ホテルのようなワンランク上の高級アメニティが揃っています。ワークアウト後もくつろいでお出かけのご準備ください。</p>
                         </div>
                     </li>
-                    <li>
+                    <li class="point-flex-row">
                         <img src="images/point3.jpeg">
                         <div class="point-text">
                             <span class="point-number">point 3</span>
@@ -122,7 +112,7 @@
                             <p>ワークアウトが終わった後は、一人一人専用のバックにいれてフロントへお戻しください。次回来店時には綺麗にクリーニングされたトレーニングウエアをお渡ししますので、手ぶらで通えます。</p>
                         </div>
                     </li>
-                    <li>
+                    <li class="point-flex-revers">
                         <img src="images/point4.jpeg">
                         <div class="point-text">
                             <span class="point-number">point 4</span>
@@ -130,7 +120,7 @@
                             <p>ワークアウト直後は適切な栄養補給がマスト。トレーナーが厳選した高品質なプロテインをご提供します。</p>
                         </div>
                     </li>
-                    <li>
+                    <li class="point-flex-row">
                         <img src="images/point5.jpeg">
                         <div class="point-text">
                             <span class="point-number">point 5</span>
@@ -159,8 +149,7 @@
                 <div class="cta-contents">
                     <div class="cta-contents-text">
                         <h3>
-                            体験コース
-                            <br>
+                            <span>体験コース</span>
                             <span>無料</span>
                         </h3>
                         <p>
@@ -173,13 +162,11 @@
                     <div class="cta-contents-img cta-contents-img-relative">
                         <img src="images/cta_contents_img.jpeg">
                     </div>
-                    <div class="btn cta-btn btn-shadow">
-                            <a href="#" target="_blank">
-                                <span>無料体験<br>ご予約はこちら</span>
-                                <span  class="arrow-right"></span>
-                            </a>
-                    </div>
                 </div>
+                <a  class="cta-btn btn-shadow" href="#" target="_blank">
+                    <span class="cta-btn-text">無料体験<br>ご予約はこちら</span>
+                    <span class="arrow-right"></span>
+                </a>
             </div>
             <div class="course-container">
                 <ul class="course-contents">
@@ -190,7 +177,6 @@
                             <p class="course-item-per-price-left">1回あたり</p>
                             <p>&yen;12,000</p>
                         </div>
-                        <div class="course-item-line"></div>
                         <p class="course-item-text">「始めてみたいけど自信がない」「続けられるか不安」そんな方に。 まずは1ヶ月間でCRATE GYMのパーソナルトレーニングの魅力を実感して頂くコースです。</p>
                     </li>
                     <li class="course-item">
@@ -200,7 +186,6 @@
                             <p class="course-item-per-price-left">1回あたり</p>
                             <p>&yen;12,000</p>
                         </div>
-                        <div class="course-item-line"></div>
                         <p class="course-item-text">「始めてみたいけど自信がない」「続けられるか不安」そんな方に。 まずは1ヶ月間でCRATE GYMのパーソナルトレーニングの魅力を実感して頂くコースです。</p>
                     </li>
                     <li class="course-item">
@@ -210,7 +195,6 @@
                             <p class="course-item-per-price-left">1回あたり</p>
                             <p>&yen;11,000</p>
                         </div>
-                        <div class="course-item-line"></div>
                         <p class="course-item-text">「始めてみたいけど自信がない」「続けられるか不安」そんな方に。 まずは1ヶ月間でCRATE GYMのパーソナルトレーニングの魅力を実感して頂くコースです。</p>
                     </li>
                 </ul>
@@ -257,16 +241,10 @@
                     1週間<span class="dot-text dot-text-2">無料退会</span>保証
                 </h3>
             </div>
-            <div class="btn cta-btn btn-shadow">
-                <ul class="cta-btn-text">
-                    <li>
-                        <a href="#" target="_blank">無料体験<br>ご予約はこちら</a>
-                    </li>
-                    <li>
-                        <span  class="arrow-right"></span>
-                    </li>
-                </ul>
-            </div>
+            <a  class="cta-btn btn-shadow" href="#" target="_blank">
+                <span class="cta-btn-text">無料体験<br>ご予約はこちら</span>
+                <span  class="arrow-right"></span>
+            </a>
         </section>
 
         <section id="access" class="access">
@@ -281,7 +259,7 @@
                     <li class="access-text-title">住所</li>
                     <li class="access-text-info">東京都中野区中野4丁目8-1</li>
                 </ul>
-                <div class="access-map gmap-wrap">
+                <div class="access-map">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3239.7673023009465!2d139.6637841!3d35.7073435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018f290e48d9fed%3A0xe8f30b65b727ce05!2z44CSMTY0LTAwMDEg5p2x5Lqs6YO95Lit6YeO5Yy65Lit6YeO77yU5LiB55uu77yY4oiS77yRIOS4remHjuWMuuW9ueaJgA!5e0!3m2!1sja!2sjp!4v1679838212510!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
@@ -301,25 +279,27 @@
     
     <footer>
         <section class="footer">
-            <hr class="footer-hr">
             <div class="footer-container">
                 <div class="followus">
                     <img src="images/footer_followus.png" alt="FOLLOW US">
-                </div>
-                <div class="sns">
-                    <a href="https://www.instagram.com/">
-                        <i class="sns-icon fa-brands fa-instagram"></i>
-                    </a> 
-                    <a href="https://twitter.com/home">
-                        <i class="sns-icon fa-brands fa-twitter"></i>
-                    </a>
+                    <div class="sns">
+                        <a href="https://www.instagram.com/">
+                            <i class="sns-icon fa-brands fa-instagram"></i>
+                        </a> 
+                        <a href="https://twitter.com/home">
+                            <i class="sns-icon fa-brands fa-twitter"></i>
+                        </a>
+                    </div>
                 </div>
                 <div class="logo">
                     <img src="images/logo_white.svg" alt="CRATE GYM">
                 </div>
-                <p class="copyright">&copy;CRATE GYM</p>
             </div>
+            <p class="copyright">&copy;CRATE GYM</p>
         </section>
     </footer>
+
+    <!-- <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script> -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 </body>
 </html>
