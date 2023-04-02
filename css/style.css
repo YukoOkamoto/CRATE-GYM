@@ -19,12 +19,17 @@ body {
     letter-spacing: 0.05em;
     width: 100%;
     height: 100%;
-    max-width: 700px;
+    max-width: 390px;
     color: #404040;
     background-color: #fff;
     box-sizing: border-box;
     margin: 0 auto;
 }
+
+/*#main,#concept,#point,#price,#access,#contact {
+    padding-top: 80px;
+    margin-top: -80px
+}*/
 
 a {
   text-decoration: none;
@@ -36,7 +41,7 @@ ul,li {
 
 img {
     width: 100%;
-    max-width: 700px;
+    max-width: 390px;
     vertical-align: bottom;
 }
 
@@ -70,6 +75,7 @@ a.btn {
 .header_container {
     position: fixed;
     width: 100%;
+    max-width: 390px;
     height: 80px;
     background-color: #fff;
     display: flex;
@@ -78,9 +84,16 @@ a.btn {
     z-index: 6;
 }
 
-.header_logo {
-    width: 9em;
+.header-logo {
+    width: 8em;
     margin: 2em;
+}
+
+@media screen and (min-width:700px) {
+    .header_container {
+        width: 100%;
+        max-width: 1440px;
+    }
 }
 
 /*nav-btn*/
@@ -155,12 +168,14 @@ a.btn {
     z-index: 9;
 }
 
-.slide_in img {
+.nav-img {
     display: inline-block;
     width: 30%;
+    margin-top: 30%;
 }
 
 .nav-menu {
+    display: inline-block;
     text-align: left;
     width: 60%;
     margin: 0 auto;
@@ -183,9 +198,10 @@ a.btn {
 
     .slide_in,.nav-menu {
         display: flex;
-        justify-content:space-between;
+        justify-content:flex-end;
         align-items: center;
         width: 100%;
+        z-index: 7;
     }
 
     .nav-menu a {
@@ -196,48 +212,24 @@ a.btn {
     .nav-menu li {
         padding: 2em;
     }
-}
+} 
 
 /*mainvisual-slider*/
 .slider img {
     z-index: 1;
-    height: 78em;
+    height: 93vh;
     object-fit: cover;
 }
 
-/*
-.slick-dots {
-    position: relative;
-    z-index: 3;
-    text-align:center;
-    margin:-50px 0 0 0;
+.slick-dots li button:before,.slick-dots li.slick-active button:before {
+    color: #009DE2;
 }
-  
-.slick-dots li {
-    display:inline-block;
-    margin:0 5px;
-}
-  
-.slick-dots button {
-    color: transparent;
-    outline: none;
-    width:8px;
-    height:8px;
-    display:block;
-    border-radius:50%;
-    background:#B5E3F7;
-}
-  
-.slick-dots .slick-active button{
-    background:#009DE2;
-}
-*/
 
 /*mainvisual-text*/
 .mv-title {
     position: absolute;
     z-index: 2;
-    top: 73%;
+    top: 60%;
 }
 
 .marker {
@@ -246,7 +238,7 @@ a.btn {
 
 .mv-title1 {
     position: relative;
-    width: 280px;
+    width: 28em;
     margin-bottom: 8px;
     border-top: 45px solid #fff;
     border-right: 50px solid transparent;
@@ -254,7 +246,7 @@ a.btn {
 
 .mv-title2 {
     position: relative;
-    width: 231px;
+    width: 22em;
     border-top: 45px solid #fff;
     border-right: 50px solid transparent;
 }
@@ -265,6 +257,29 @@ a.btn {
     font-size: 2rem;
     font-weight: normal;
     padding: 8px 8px 8px 16px;
+}
+
+@media screen and (min-width:700px) {
+    .mv-title {
+    top: 60%;
+    }
+
+    .mv-title1-text,.mv-title2-text {
+        font-size: 4rem;
+        top: -70px;
+    }
+
+    .mv-title1 {
+        width: 50em;
+        margin-bottom: 10px;
+        border-top: 70px solid #fff;
+    }
+
+    .mv-title2 {
+        width: 45em;
+        margin-bottom: 10px;
+        border-top: 70px solid #fff;
+    }
 }
 
 /*mv-btn*/
@@ -313,6 +328,29 @@ a.btn {
     position: absolute;
     right: -0.05em;
     box-sizing: border-box;
+}
+
+@media screen and (min-width:700px) {
+    .mv-cta-btn {
+        width: 150px;
+        height: 150px;
+        bottom: 5%;
+        right: 3%;
+    }
+
+    .mv-cta-btn-text {
+        font-size: 2rem;
+    }
+
+    .m-arrow-right {
+        width: 2em;
+    }
+      
+    .m-arrow-right::before {
+        width: 0.8em;
+        height: 0.8em;
+        right: -0.1em;
+    }
 }
 
 
@@ -382,20 +420,19 @@ a.btn {
     }
 
     .concept-text {
-        height: 80%;
-        padding: 16%;
+        padding: 80px 24px;
         transform: translateX(30px);
-        box-sizing: border-box;
     }
 
     .concept-h3 {
         display: flex;
         flex-direction: row;
-        font-size: 3.2rem;
+        font-size: 4rem;
     }
 
     .concept-text p {
         line-height: 2.4;
+        font-size: 2.4rem;
     }
 
     .concept-img {
@@ -703,7 +740,7 @@ a.btn {
 
 .access-map {
     height : 0;
-    padding-bottom : 50%;
+    padding-bottom : 90%;
     overflow : hidden;
     margin: 0 20px 56px 20px;
     box-sizing: border-box;
@@ -808,22 +845,27 @@ a.btn {
 }
 
 /*footer*/
-
 .footer-container {
     border-top: 1px dotted #404040;
 }
 
 .followus img {
     width: 30%;
-    display: block;
+    display: inline-block;
     margin: 16px auto;
-    text-align: center;
+}
+
+.followus {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .sns {
     width: 100%;
     margin-bottom: 16px;
-    text-align: center;
+    display: flex;
+    justify-content: center;
 }
 
 .sns a {
@@ -841,7 +883,7 @@ a.btn {
 }
 
 .logo img {
-    width: 30%;
+    width: 20%;
     margin-bottom: 16px;
 }
 
@@ -854,25 +896,26 @@ a.btn {
     .footer-container {
         display: flex;
         flex-direction: row-reverse;
+        margin: 0 auto;
         padding: 16px;
         width: 50%;
     }
 
     .logo img {
-        width: 50%;
+        width: 100%;
+    }
+    
+    .followus img {
+        margin: 8px;
     }
 
-    .followus img {
-        width: 20%;
-        display: inline-block;
+    .followus {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
-    
-    .sns {
-        margin: 16px;
-    }
-    
+
     .sns-icon {
         font-size: 5rem;
     }
-    
 }

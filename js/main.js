@@ -5,5 +5,14 @@ $(function(){
         $(".slide_in").fadetoggle(1000);
     });
 
-    // $(".slider").slick();
+    $(".header_nav_btn,.nav-menu li a").click(function(){
+        $(".slide_in").hide();
+    });
+
+    $(".slider").slick({
+        arrows: false,
+        dots: true,
+        autoplay: true
+    });
 });
+
