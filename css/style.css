@@ -57,7 +57,7 @@ a.btn {
 }
 
 .btn-shadow {
-    box-shadow: 0 2px 2px #e8e8e8;
+    border-bottom: solid 4px #627295;
 }
 
 @media screen and (min-width:700px){
@@ -87,6 +87,7 @@ a.btn {
 .header-logo {
     width: 8em;
     margin: 2em;
+    z-index: 10;
 }
 
 @media screen and (min-width:700px) {
@@ -98,13 +99,16 @@ a.btn {
 
 /*nav-btn*/
 .header_nav_btn {
-    position: relative;
+    position: fixed;
+    top: 0;
+    right: 0;
     margin: 8px;
     background:#FFF;
     cursor: pointer;
     width: 55px;
     height:55px;
     border-radius: 50px;
+    z-index: 10;
 }
 
 .header_nav_btn span {
@@ -131,6 +135,10 @@ a.btn {
 }
 
 /*nav-btn-active*/
+.header_nav_btn.active {
+    text-align: right;
+}
+
 .header_nav_btn.active span:nth-of-type(1) {
     top: 18px;
     left: 18px;
@@ -151,21 +159,25 @@ a.btn {
 
 /*nav-menu-active*/
 .slide_in {
-    display: none;
-}
-
-.slide_in.open {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     position: absolute;
-    right: 0;
-    left: 0;
     top: 0;
+    right: 0;
     width: 100%;
+    max-width: 1440px;
     height: 100vh;
     background-color: #404040;
     z-index: 9;
+    transition: right 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translateX(150%);
+    transition: all .3s;
+}
+
+.slide_in.open {
+    transform: translateX(0);
+    transition: all .3s;
 }
 
 .nav-img {
@@ -192,6 +204,18 @@ a.btn {
 }
 
 @media screen and (min-width:700px){
+    .slide_in {
+        width: 80%;
+        height: 80px;
+        background-color: #fff;
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+        align-items: center;
+        transform: translateX(0);
+        transition: all 0s;
+    }
+
     .slide_in img,.header_nav_btn {
         display: none;
     }
@@ -302,6 +326,9 @@ a.btn {
 .mv-cta-btn:hover {
     color: #404040;
     background: #ffa011;
+    transform: translateY(4px);
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);
+    border-bottom: none;
 }
 
 .mv-cta-btn-text {
@@ -357,15 +384,18 @@ a.btn {
 /*各セクションタイトル*/
 .title {
     text-align: center;
+    margin-top:-80px;
+    padding-top:80px;
 }
 
 .m-title-en {
+    display: block;
     color: #009DE2;
     font-size: 4rem;
-    margin-top: 72px;
 }
 
 .m-title-jp,.contact-title {
+    display: block;
     color: #009DE2;
     font-size: 1.8rem;
     margin-bottom: 24px;
@@ -620,6 +650,9 @@ a.btn {
 .cta-btn a:hover {
     color: #fff;
     background-color: #ffa011;
+    transform: translateY(-16px);
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);
+    border-bottom: none;
 }
 
 .cta-btn-text {
@@ -917,5 +950,9 @@ a.btn {
 
     .sns-icon {
         font-size: 5rem;
+    }
+
+    .sns {
+        display: inline-block;
     }
 }
